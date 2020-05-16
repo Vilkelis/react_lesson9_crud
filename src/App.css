@@ -1,38 +1,90 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__content  {
+  width: 400px;
+  text-align: initial;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .post-card {
+  width: 100%;
+}
+
+.posts-list__item {
+  margin-top: 16px;
+}
+
+.post-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.posts-list__item-a,
+.posts-list__item-a:hover,
+.posts-list__item-a:active {
+  text-decoration: none;
+  color: initial;
+}
+
+.posts-list__item-a .post-card:hover {
+  border-color: #a1a1e0;
+  background-color: #f9f9fb;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+}
+
+.card-title__user {
+  color: #5d7a98;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-title__time {
+  color: #b7acac;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-text, .post-text-edit{
+  font-size: 30px;
+  color: #676767;
+  width: 100%;
+}
+
+.posts-nav {
+  text-align: right;
+  margin-top: 10px;  
+}
+
+.form__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #676767;
+  display: flex;
+  justify-content: space-between;
+}  
+
+.form__footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.form__footer button {
+  margin-left: 10px;
+}
+
+.close {
+  cursor: pointer;
 }
